@@ -2,6 +2,7 @@
   "name": "math-puzzle",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://farafonoff.github.io/math-puzzle",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -13,10 +14,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rm -rf docs && mv build docs",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "mkpasswords": "node generate.js"
+    "mkpasswords": "node generate.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,6 +39,7 @@
   "devDependencies": {
     "classnames": "^2.2.6",
     "crypto-js": "^4.0.0",
+    "gh-pages": "^3.1.0",
     "wordlist-english": "^1.2.1"
   }
 }
