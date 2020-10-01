@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/math-puzzle/static/css/main.afc6cd7a.chunk.css",
-    "main.js": "/math-puzzle/static/js/main.d9ce4060.chunk.js",
-    "main.js.map": "/math-puzzle/static/js/main.d9ce4060.chunk.js.map",
+    "main.css": "/math-puzzle/static/css/main.3060927e.chunk.css",
+    "main.js": "/math-puzzle/static/js/main.44ddd21a.chunk.js",
+    "main.js.map": "/math-puzzle/static/js/main.44ddd21a.chunk.js.map",
     "runtime-main.js": "/math-puzzle/static/js/runtime-main.e72cd6e8.js",
     "runtime-main.js.map": "/math-puzzle/static/js/runtime-main.e72cd6e8.js.map",
-    "static/js/2.40110c86.chunk.js": "/math-puzzle/static/js/2.40110c86.chunk.js",
-    "static/js/2.40110c86.chunk.js.map": "/math-puzzle/static/js/2.40110c86.chunk.js.map",
+    "static/js/2.5af81f02.chunk.js": "/math-puzzle/static/js/2.5af81f02.chunk.js",
+    "static/js/2.5af81f02.chunk.js.map": "/math-puzzle/static/js/2.5af81f02.chunk.js.map",
     "index.html": "/math-puzzle/index.html",
-    "precache-manifest.db3e4a41ab39da3d00611738c19f03d8.js": "/math-puzzle/precache-manifest.db3e4a41ab39da3d00611738c19f03d8.js",
+    "precache-manifest.2223dd1abf7ef525a9d6cd52974cb1fb.js": "/math-puzzle/precache-manifest.2223dd1abf7ef525a9d6cd52974cb1fb.js",
     "service-worker.js": "/math-puzzle/service-worker.js",
-    "static/css/main.afc6cd7a.chunk.css.map": "/math-puzzle/static/css/main.afc6cd7a.chunk.css.map",
-    "static/js/2.40110c86.chunk.js.LICENSE.txt": "/math-puzzle/static/js/2.40110c86.chunk.js.LICENSE.txt"
+    "static/css/main.3060927e.chunk.css.map": "/math-puzzle/static/css/main.3060927e.chunk.css.map",
+    "static/js/2.5af81f02.chunk.js.LICENSE.txt": "/math-puzzle/static/js/2.5af81f02.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e72cd6e8.js",
-    "static/js/2.40110c86.chunk.js",
-    "static/css/main.afc6cd7a.chunk.css",
-    "static/js/main.d9ce4060.chunk.js"
+    "static/js/2.5af81f02.chunk.js",
+    "static/css/main.3060927e.chunk.css",
+    "static/js/main.44ddd21a.chunk.js"
   ]
 }
