@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "92a131d3e6b4e0f1c8c2a458991f4962",
+    "revision": "98347a09a7b0a17422d4d78db3d8e997",
     "url": "/math-puzzle/index.html"
   },
   {
-    "revision": "3404b0fa6893bdb1b40b",
+    "revision": "18eaafa3d987400dd660",
     "url": "/math-puzzle/static/css/main.3060927e.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/math-puzzle/static/js/2.5af81f02.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3404b0fa6893bdb1b40b",
-    "url": "/math-puzzle/static/js/main.44ddd21a.chunk.js"
+    "revision": "18eaafa3d987400dd660",
+    "url": "/math-puzzle/static/js/main.d9ce4060.chunk.js"
   },
   {
     "revision": "2501c1291a13e513dac7",
