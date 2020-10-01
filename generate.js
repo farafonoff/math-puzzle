@@ -1,6 +1,7 @@
 const AES = require('crypto-js/aes');
 const wordlist = require('wordlist-english');
 const fs = require('fs');
+const { uniqBy } = require('lodash');
 const MIN_LENGTH = 3;
 const MAX_LENGTH = 8;
 const dict = wordlist['english'];
@@ -9,6 +10,9 @@ function getRandomInt(max) {
     const res =  Math.floor(Math.random() * Math.floor(max));
     if (res === max) --res;
     return res;
+}
+function getRandomIntMin(min, max) {
+  return getRandomInt(max-min) + min;
 }
 function randomWord() {
     let word ;
@@ -19,8 +23,8 @@ function randomWord() {
     return word;
 }
 function randomPuzzleDivMul() {
-    const a = getRandomInt(8) + 2;
-    const b = getRandomInt(8) + 2;
+    const a = getRandomIntMin(4,10);
+    const b = getRandomIntMin(4,10);
     const k = getRandomInt(2);
     switch(k) {
         case 0: return {h: `${a}*${b}`, m: `${a}*${b}`};
@@ -28,7 +32,8 @@ function randomPuzzleDivMul() {
     }
 }
 function generatePuzzleData(date) {
-    const puzzles = Array.from(new Array(10)).map(() => randomPuzzleDivMul());
+    let puzzles = uniqBy(Array.from(new Array(30)).map(() => randomPuzzleDivMul()), 'h');
+    puzzles = puzzles.slice(0, 10);
     const password = puzzles.map(puz => eval(puz.m)).join('_');
     const word = randomWord();
     return {

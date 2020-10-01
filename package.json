@@ -40,6 +40,7 @@
     "classnames": "^2.2.6",
     "crypto-js": "^4.0.0",
     "gh-pages": "^3.1.0",
+    "lodash": "^4.17.20",
     "wordlist-english": "^1.2.1"
   }
 }
