@@ -1,6 +1,6 @@
 import { last } from 'lodash-es';
 export function loadData() {
-    return fetch('/passwords.json')
+    return fetch('passwords.json')
         .then(resp => resp.json());
 }
 
