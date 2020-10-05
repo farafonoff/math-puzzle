@@ -23,17 +23,22 @@ function randomWord() {
     return word;
 }
 function randomPuzzleDivMul() {
-    const a = getRandomIntMin(4,10);
-    const b = getRandomIntMin(4,10);
-    const k = getRandomInt(2);
+    let a = getRandomIntMin(2,10);
+    let b = getRandomIntMin(6,10);
+    const s = getRandomInt(2);
+    const k = getRandomInt(3);
+    if (s) {
+      [a, b] = [b, a]
+    }
     switch(k) {
         case 0: return {h: `${a}*${b}`, m: `${a}*${b}`};
-        case 1: return {h: `${a*b}:${a}`, m: `${a*b}/${a}`};
+        default: return {h: `${a*b}:${a}`, m: `${a*b}/${a}`};
     }
 }
 function generatePuzzleData(date) {
-    let puzzles = uniqBy(Array.from(new Array(30)).map(() => randomPuzzleDivMul()), 'h');
-    puzzles = puzzles.slice(0, 10);
+    const puzzles_count = 30;
+    let puzzles = uniqBy(Array.from(new Array(puzzles_count*3)).map(() => randomPuzzleDivMul()), 'h');
+    puzzles = puzzles.slice(0, puzzles_count);
     const password = puzzles.map(puz => eval(puz.m)).join('_');
     const word = randomWord();
     return {
